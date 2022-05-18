@@ -9,8 +9,8 @@ func ReverseString(input string) (output string) {
 		l++
 	}
 	m = m[0:l]
-	for i := 0; i < l/2; l++ {
-		m[i], m[l-1-i] = m[l-1-i], m[i]
+	for i, s := 0, len(m)-1; i < s; i, s = i+1, s-1 {
+		m[i], m[s] = m[s], m[i]
 	}
 	output = string(m)
 
