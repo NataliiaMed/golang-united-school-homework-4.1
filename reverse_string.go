@@ -4,13 +4,11 @@ func ReverseString(input string) (output string) {
 	// solution goes here
 	l := len(input)
 	m := make([]rune, l)
-	for _, s := range(input) {
+	for _, s := range input {
 		l--
 		m[l] = s
-	}output = string(m)
-	
-return output
-}
-	
+	}
+	output = string(m)
 
-	
+	return output
+}
